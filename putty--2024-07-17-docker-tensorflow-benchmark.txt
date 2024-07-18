@@ -1,0 +1,902 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2024.07.17 17:16:41 =~=~=~=~=~=~=~=~=~=~=~=
+Using username "ai".
+ai@192.168.2.9's password: 
+Welcome to Ubuntu 22.04.1 LTS (GNU/Linux 5.18.2-amdsos-build45-ubuntu-22.04+ x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Wed Jul 17 05:16:41 PM CST 2024
+
+  System load:  1.13720703125       Processes:                375
+  Usage of /:   69.0% of 234.13GB   Users logged in:          1
+  Memory usage: 10%                 IPv4 address for docker0: 172.17.0.1
+  Swap usage:   0%                  IPv4 address for eth0:    192.168.2.9
+
+  => There are 2 zombie processes.
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+223 updates can be applied immediately.
+222 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+22 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+Last login: Wed Jul 17 14:53:13 2024 from 127.0.0.1
+[?2004h]0;ai@ubt2204s-uefi-amd-diag: ~ai@ubt2204s-uefi-amd-diag:~$ su
+[?2004l#####################mi210 updating from ~/.bashrc file ###################
+[?2004h]0;root@ubt2204s-uefi-amd-diag: /home/airoot@ubt2204s-uefi-amd-diag:/home/ai# docker ps -a
+[?2004lCONTAINER ID   IMAGE                                                                     COMMAND                   CREATED        STATUS                        PORTS                                   NAMES
+efb303c888d9   rocm/tensorflow                                                           "/bin/bash"               2 hours ago    Exited (129) 52 minutes ago                                           quizzical_volhard
+9fc7463b3c65   rocm/tensorflow                                                           "/bin/bash"               2 hours ago    Exited (127) 2 hours ago                                              thirsty_satoshi
+9f3f3e7c67a5   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1_migraphx-mlperf_15   "bash"                    3 weeks ago    Exited (129) 3 weeks ago                                              affectionate_chaum
+bd733ccf1786   726ab8222adb                                                              "/bin/sh -c 'if [ \"$…"   4 weeks ago    Exited (128) 4 weeks ago                                              tender_brattain
+7b75ce53bed8   726ab8222adb                                                              "/bin/sh -c 'if [ \"$…"   4 weeks ago    Exited (128) 4 weeks ago                                              priceless_mcclintock
+4437a9806404   726ab8222adb                                                              "/bin/sh -c 'if [ \"$…"   4 weeks ago    Dead                                                                  laughing_booth
+c29ee8fcb9d4   726ab8222adb                                                              "/bin/sh -c 'if [ \"$…"   4 weeks ago    Exited (128) 4 weeks ago                                              distracted_mcclintock
+3ad6e8f948e7   726ab8222adb                                                              "/bin/sh -c 'if [ \"$…"   4 weeks ago    Exited (128) 4 weeks ago                                              romantic_dubinsky
+edb8803d4ed6   519916d02266                                                              "/bin/sh -c 'if [ \"$…"   4 weeks ago    Exited (255) 4 weeks ago                                              musing_sinoussi
+d2465360c9b5   519916d02266                                                              "/bin/sh -c 'if [ \"$…"   4 weeks ago    Exited (1) 4 weeks ago                                                beautiful_carver
+9cdc853f49f6   embeddedllminfo/vllm-rocm:vllm-v0.2.6                                     "/bin/bash"               5 weeks ago    Exited (129) 5 weeks ago                                              bold_murdock
+b2675a78eaca   ghcr.io/huggingface/text-generation-inference:1.4.0                       "text-generation-lau…"    5 weeks ago    Created                       0.0.0.0:8000->80/tcp, :::8000->80/tcp   flamboyant_herschel
+c5cec30836f0   ghcr.io/huggingface/text-generation-inference:1.4.0                       "text-generation-lau…"    5 weeks ago    Created                       0.0.0.0:8000->80/tcp, :::8000->80/tcp   hardcore_ramanujan
+50be30844aff   ghcr.io/huggingface/text-generation-inference:1.4.0                       "text-generation-lau…"    5 weeks ago    Created                       0.0.0.0:8000->80/tcp, :::8000->80/tcp   gallant_hopper
+2d86663e01f3   ghcr.io/huggingface/text-generation-inference:1.4.0                       "text-generation-lau…"    5 weeks ago    Created                       0.0.0.0:8000->80/tcp, :::8000->80/tcp   affectionate_black
+301521d9f21f   ghcr.io/huggingface/text-generation-inference:1.4.0                       "text-generation-lau…"    5 weeks ago    Created                       0.0.0.0:8000->80/tcp, :::8000->80/tcp   crazy_boyd
+b51e263e1d4a   ghcr.io/huggingface/text-generation-inference:1.4.0                       "text-generation-lau…"    5 weeks ago    Created                       0.0.0.0:8000->80/tcp, :::8000->80/tcp   practical_blackwell
+5e7741576815   ghcr.io/huggingface/text-generation-inference:1.4.0                       "text-generation-lau…"    5 weeks ago    Created                       0.0.0.0:8000->80/tcp, :::8000->80/tcp   upbeat_jackson
+1bbff442d858   rocm/pytorch:rocm5.7_ubuntu22.04_py3.10_pytorch_2.0.1                     "/bin/bash"               6 weeks ago    Exited (255) 2 weeks ago                                              sdxl_
+0b1a797c72bc   rocm/pytorch:rocm5.7_ubuntu22.04_py3.10_pytorch_2.0.1                     "/bin/bash"               6 weeks ago    Exited (137) 6 weeks ago                                              sdxl
+f1e4bce9dd3d   l1naforever/stable-diffusion-rocm:latest                                  "/bin/bash -c 'pytho…"    6 weeks ago    Exited (1) 6 weeks ago                                                adoring_johnson
+8946c05e04d1   l1naforever/stable-diffusion-rocm:latest                                  "/bin/bash -c 'pytho…"    6 weeks ago    Exited (1) 6 weeks ago                                                confident_shockley
+d098958fac1d   l1naforever/stable-diffusion-rocm:latest                                  "/bin/bash -c 'pytho…"    6 weeks ago    Exited (1) 6 weeks ago                                                vibrant_elbakyan
+5b69787932ff   l1naforever/stable-diffusion-rocm:latest                                  "/bin/bash -c 'pytho…"    6 weeks ago    Exited (1) 6 weeks ago                                                stable-diffusion3
+3cbf5bce3958   l1naforever/stable-diffusion-rocm:latest                                  "/bin/bash -c 'pytho…"    6 weeks ago    Exited (1) 6 weeks ago                                                stable-diffusion2
+7e03a8fa89ce   l1naforever/stable-diffusion-rocm:latest                                  "/bin/bash -c 'pytho…"    6 weeks ago    Exited (1) 6 weeks ago                                                stable-diffusion1
+112f5528fc53   l1naforever/stable-diffusion-rocm:latest                                  "/bin/bash -c 'pytho…"    6 weeks ago    Exited (1) 6 weeks ago                                                stable-diffusion
+79abdb6a15cc   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1_migraphx-mlperf      "bash"                    6 weeks ago    Exited (129) 6 weeks ago                                              lucid_easley
+f3ef4c10fd39   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1_migraphx-mlperf_15   "bash"                    6 weeks ago    Exited (255) 2 weeks ago                                              busy_goldberg
+af23f4771888   ac6c8aa6cf86                                                              "/bin/bash"               6 weeks ago    Exited (137) 6 weeks ago                                              gallant_gould
+6ee178c4dadd   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1_migraphx-mlperf_15   "bash"                    6 weeks ago    Exited (137) 6 weeks ago                                              sad_turing
+7b7e33b0cfea   ac6c8aa6cf86                                                              "/bin/bash"               7 weeks ago    Exited (137) 6 weeks ago                                              awesome_noether
+09afcccf4e0a   embeddedllminfo/vllm-rocm:vllm-v0.2.4                                     "/bin/bash"               7 weeks ago    Exited (137) 5 weeks ago                                              tender_mirzakhani
+d9b56ee6e317   embeddedllminfo/vllm-rocm:vllm-v0.2.4                                     "/bin/bash"               7 weeks ago    Exited (137) 5 weeks ago                                              clever_einstein
+5f7f43eeb2aa   rocm/pytorch:rocm5.7_ubuntu22.04_py3.10_pytorch_2.0.1                     "bash"                    7 weeks ago    Exited (137) 7 weeks ago                                              unruffled_wright
+07bd62a698ad   41f9c4a96c08                                                              "bash"                    2 months ago   Exited (137) 6 weeks ago                                              modest_cerf
+cea61613958d   2574254694cc                                                              "bash"                    2 months ago   Exited (137) 7 weeks ago                                              peaceful_borg
+d239d0fe1f95   rocm/pytorch:rocm5.7_ubuntu22.04_py3.10_pytorch_2.0.1                     "bash"                    2 months ago   Exited (137) 7 weeks ago                                              cranky_kilby
+cb6b37f42920   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1_migraphx-mlperf      "bash"                    2 months ago   Exited (137) 7 weeks ago                                              fervent_volhard
+b02594133126   2574254694cc                                                              "bash"                    2 months ago   Exited (137) 2 months ago                                             vigilant_wilbur
+c780e2b510d1   2574254694cc                                                              "bash"                    2 months ago   Exited (137) 2 months ago                                             great_napier
+c38c029e2860   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1_migraphx-mlperf      "bash"                    2 months ago   Exited (137) 2 months ago                                             strange_boyd
+60b94ce6d79b   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1_migraphx-mlperf      "bash"                    2 months ago   Created                                                               gallant_faraday
+ea9fbce4f2fd   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1_migraphx-mlperf      "bash"                    2 months ago   Exited (137) 2 months ago                                             compassionate_kowalevski
+5bba26bc463b   03aaa8a8657c                                                              "bash"                    2 months ago   Exited (137) 2 months ago                                             blissful_khorana
+96d6117a3dee   03aaa8a8657c                                                              "bash"                    2 months ago   Exited (129) 2 months ago                                             affectionate_easley
+4c66f9931e97   45de5408c631                                                              "bash"                    2 months ago   Exited (137) 2 months ago                                             mystifying_morse
+6c3d84f506ca   21dbcfba1b87                                                              "bash"                    2 months ago   Exited (137) 2 months ago                                             elastic_lederberg
+63aae10258ca   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1                      "bash"                    2 months ago   Exited (137) 2 months ago                                             mlperf_temp_test_marv
+[?2004h]0;root@ubt2204s-uefi-amd-diag: /home/airoot@ubt2204s-uefi-amd-diag:/home/ai# [K]0;root@ubt2204s-uefi-amd-diag: /home/airoot@ubt2204s-uefi-amd-diag:/home/ai# [K]0;root@ubt2204s-uefi-amd-diag: /home/airoot@ubt2204s-uefi-amd-diag:/home/ai# [K]0;root@ubt2204s-uefi-amd-diag: /home/airoot@ubt2204s-uefi-amd-diag:/home/ai# [K]0;root@ubt2204s-uefi-amd-diag: /home/airoot@ubt2204s-uefi-amd-diag:/home/ai# [K]0;root@ubt2204s-uefi-amd-diag: /home/airoot@ubt2204s-uefi-amd-diag:/home/ai# [K]0;root@ubt2204s-uefi-amd-diag: /home/airoot@ubt2204s-uefi-amd-diag:/home/ai# [K]0;root@ubt2204s-uefi-amd-diag: /home/airoot@ubt2204s-uefi-amd-diag:/home/ai# [K]0;root@ubt2204s-uefi-amd-diag: /home/airoot@ubt2204s-uefi-amd-diag:/home/ai# docker ps -a
+[?2004lCONTAINER ID   IMAGE                                                                     COMMAND                   CREATED        STATUS                        PORTS                                   NAMES
+efb303c888d9   rocm/tensorflow                                                           "/bin/bash"               2 hours ago    Exited (129) 52 minutes ago                                           quizzical_volhard
+9fc7463b3c65   rocm/tensorflow                                                           "/bin/bash"               2 hours ago    Exited (127) 2 hours ago                                              thirsty_satoshi
+9f3f3e7c67a5   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1_migraphx-mlperf_15   "bash"                    3 weeks ago    Exited (129) 3 weeks ago                                              affectionate_chaum
+bd733ccf1786   726ab8222adb                                                              "/bin/sh -c 'if [ \"$…"   4 weeks ago    Exited (128) 4 weeks ago                                              tender_brattain
+7b75ce53bed8   726ab8222adb                                                              "/bin/sh -c 'if [ \"$…"   4 weeks ago    Exited (128) 4 weeks ago                                              priceless_mcclintock
+4437a9806404   726ab8222adb                                                              "/bin/sh -c 'if [ \"$…"   4 weeks ago    Dead                                                                  laughing_booth
+c29ee8fcb9d4   726ab8222adb                                                              "/bin/sh -c 'if [ \"$…"   4 weeks ago    Exited (128) 4 weeks ago                                              distracted_mcclintock
+3ad6e8f948e7   726ab8222adb                                                              "/bin/sh -c 'if [ \"$…"   4 weeks ago    Exited (128) 4 weeks ago                                              romantic_dubinsky
+edb8803d4ed6   519916d02266                                                              "/bin/sh -c 'if [ \"$…"   4 weeks ago    Exited (255) 4 weeks ago                                              musing_sinoussi
+d2465360c9b5   519916d02266                                                              "/bin/sh -c 'if [ \"$…"   4 weeks ago    Exited (1) 4 weeks ago                                                beautiful_carver
+9cdc853f49f6   embeddedllminfo/vllm-rocm:vllm-v0.2.6                                     "/bin/bash"               5 weeks ago    Exited (129) 5 weeks ago                                              bold_murdock
+b2675a78eaca   ghcr.io/huggingface/text-generation-inference:1.4.0                       "text-generation-lau…"    5 weeks ago    Created                       0.0.0.0:8000->80/tcp, :::8000->80/tcp   flamboyant_herschel
+c5cec30836f0   ghcr.io/huggingface/text-generation-inference:1.4.0                       "text-generation-lau…"    5 weeks ago    Created                       0.0.0.0:8000->80/tcp, :::8000->80/tcp   hardcore_ramanujan
+50be30844aff   ghcr.io/huggingface/text-generation-inference:1.4.0                       "text-generation-lau…"    5 weeks ago    Created                       0.0.0.0:8000->80/tcp, :::8000->80/tcp   gallant_hopper
+2d86663e01f3   ghcr.io/huggingface/text-generation-inference:1.4.0                       "text-generation-lau…"    5 weeks ago    Created                       0.0.0.0:8000->80/tcp, :::8000->80/tcp   affectionate_black
+301521d9f21f   ghcr.io/huggingface/text-generation-inference:1.4.0                       "text-generation-lau…"    5 weeks ago    Created                       0.0.0.0:8000->80/tcp, :::8000->80/tcp   crazy_boyd
+b51e263e1d4a   ghcr.io/huggingface/text-generation-inference:1.4.0                       "text-generation-lau…"    5 weeks ago    Created                       0.0.0.0:8000->80/tcp, :::8000->80/tcp   practical_blackwell
+5e7741576815   ghcr.io/huggingface/text-generation-inference:1.4.0                       "text-generation-lau…"    5 weeks ago    Created                       0.0.0.0:8000->80/tcp, :::8000->80/tcp   upbeat_jackson
+1bbff442d858   rocm/pytorch:rocm5.7_ubuntu22.04_py3.10_pytorch_2.0.1                     "/bin/bash"               6 weeks ago    Exited (255) 2 weeks ago                                              sdxl_
+0b1a797c72bc   rocm/pytorch:rocm5.7_ubuntu22.04_py3.10_pytorch_2.0.1                     "/bin/bash"               6 weeks ago    Exited (137) 6 weeks ago                                              sdxl
+f1e4bce9dd3d   l1naforever/stable-diffusion-rocm:latest                                  "/bin/bash -c 'pytho…"    6 weeks ago    Exited (1) 6 weeks ago                                                adoring_johnson
+8946c05e04d1   l1naforever/stable-diffusion-rocm:latest                                  "/bin/bash -c 'pytho…"    6 weeks ago    Exited (1) 6 weeks ago                                                confident_shockley
+d098958fac1d   l1naforever/stable-diffusion-rocm:latest                                  "/bin/bash -c 'pytho…"    6 weeks ago    Exited (1) 6 weeks ago                                                vibrant_elbakyan
+5b69787932ff   l1naforever/stable-diffusion-rocm:latest                                  "/bin/bash -c 'pytho…"    6 weeks ago    Exited (1) 6 weeks ago                                                stable-diffusion3
+3cbf5bce3958   l1naforever/stable-diffusion-rocm:latest                                  "/bin/bash -c 'pytho…"    6 weeks ago    Exited (1) 6 weeks ago                                                stable-diffusion2
+7e03a8fa89ce   l1naforever/stable-diffusion-rocm:latest                                  "/bin/bash -c 'pytho…"    6 weeks ago    Exited (1) 6 weeks ago                                                stable-diffusion1
+112f5528fc53   l1naforever/stable-diffusion-rocm:latest                                  "/bin/bash -c 'pytho…"    6 weeks ago    Exited (1) 6 weeks ago                                                stable-diffusion
+79abdb6a15cc   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1_migraphx-mlperf      "bash"                    6 weeks ago    Exited (129) 6 weeks ago                                              lucid_easley
+f3ef4c10fd39   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1_migraphx-mlperf_15   "bash"                    6 weeks ago    Exited (255) 2 weeks ago                                              busy_goldberg
+af23f4771888   ac6c8aa6cf86                                                              "/bin/bash"               6 weeks ago    Exited (137) 6 weeks ago                                              gallant_gould
+6ee178c4dadd   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1_migraphx-mlperf_15   "bash"                    6 weeks ago    Exited (137) 6 weeks ago                                              sad_turing
+7b7e33b0cfea   ac6c8aa6cf86                                                              "/bin/bash"               7 weeks ago    Exited (137) 6 weeks ago                                              awesome_noether
+09afcccf4e0a   embeddedllminfo/vllm-rocm:vllm-v0.2.4                                     "/bin/bash"               7 weeks ago    Exited (137) 5 weeks ago                                              tender_mirzakhani
+d9b56ee6e317   embeddedllminfo/vllm-rocm:vllm-v0.2.4                                     "/bin/bash"               7 weeks ago    Exited (137) 5 weeks ago                                              clever_einstein
+5f7f43eeb2aa   rocm/pytorch:rocm5.7_ubuntu22.04_py3.10_pytorch_2.0.1                     "bash"                    7 weeks ago    Exited (137) 7 weeks ago                                              unruffled_wright
+07bd62a698ad   41f9c4a96c08                                                              "bash"                    2 months ago   Exited (137) 6 weeks ago                                              modest_cerf
+cea61613958d   2574254694cc                                                              "bash"                    2 months ago   Exited (137) 7 weeks ago                                              peaceful_borg
+d239d0fe1f95   rocm/pytorch:rocm5.7_ubuntu22.04_py3.10_pytorch_2.0.1                     "bash"                    2 months ago   Exited (137) 7 weeks ago                                              cranky_kilby
+cb6b37f42920   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1_migraphx-mlperf      "bash"                    2 months ago   Exited (137) 7 weeks ago                                              fervent_volhard
+b02594133126   2574254694cc                                                              "bash"                    2 months ago   Exited (137) 2 months ago                                             vigilant_wilbur
+c780e2b510d1   2574254694cc                                                              "bash"                    2 months ago   Exited (137) 2 months ago                                             great_napier
+c38c029e2860   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1_migraphx-mlperf      "bash"                    2 months ago   Exited (137) 2 months ago                                             strange_boyd
+60b94ce6d79b   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1_migraphx-mlperf      "bash"                    2 months ago   Created                                                               gallant_faraday
+ea9fbce4f2fd   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1_migraphx-mlperf      "bash"                    2 months ago   Exited (137) 2 months ago                                             compassionate_kowalevski
+5bba26bc463b   03aaa8a8657c                                                              "bash"                    2 months ago   Exited (137) 2 months ago                                             blissful_khorana
+96d6117a3dee   03aaa8a8657c                                                              "bash"                    2 months ago   Exited (129) 2 months ago                                             affectionate_easley
+4c66f9931e97   45de5408c631                                                              "bash"                    2 months ago   Exited (137) 2 months ago                                             mystifying_morse
+6c3d84f506ca   21dbcfba1b87                                                              "bash"                    2 months ago   Exited (137) 2 months ago                                             elastic_lederberg
+63aae10258ca   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1                      "bash"                    2 months ago   Exited (137) 2 months ago                                             mlperf_temp_test_marv
+[?2004h]0;root@ubt2204s-uefi-amd-diag: /home/airoot@ubt2204s-uefi-amd-diag:/home/ai# pyto[Khon
+[?2004lPython 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import tensorflow
+2024-07-17 17:17:33.030625: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+>>> print()t)e)n)s)o)r)f)l)o)w).)_)_)v)e)r)s)i)o)n)_)_)
+2.14.0.600
+>>> 
+KeyboardInterrupt
+>>> 
+[1]+  Stopped                 python
+[?2004h]0;root@ubt2204s-uefi-amd-diag: /home/airoot@ubt2204s-uefi-amd-diag:/home/ai# cd /lm[K[Kmnt/git/tf_benchmakrs/scripts/tf_cnn_benchmarks/
+[?2004l[?2004h]0;root@ubt2204s-uefi-amd-diag: /mnt/git/tf_benchmakrs/scripts/tf_cnn_benchmarksroot@ubt2204s-uefi-amd-diag:/mnt/git/tf_benchmakrs/scripts/tf_cnn_benchmarks# ls
+[?2004lall_reduce_benchmark.py       batch_allreduce.py                        benchmark_cnn_test.py  constants.py        flags.py                    [0m[01;34mmodels[0m            python            ssd_dataloader.py     variable_mgr.py
+all_reduce_benchmark_test.py  benchmark_cnn_distributed_test.py         cnn_util.py            convnet_builder.py  leading_indicators_test.py  [01;34mplatforms[0m         README.md         [01;34mtest_data[0m             variable_mgr_util.py
+allreduce.py                  benchmark_cnn_distributed_test_runner.py  cnn_util_test.py       datasets.py         mlperf.py                   preprocessing.py  run_tests.py      test_util.py          variable_mgr_util_test.py
+allreduce_test.py             benchmark_cnn.py                          coco_metric.py         device:             mlperf_test.py              [01;34m__pycache__[0m       ssd_constants.py  tf_cnn_benchmarks.py
+[?2004h]0;root@ubt2204s-uefi-amd-diag: /mnt/git/tf_benchmakrs/scripts/tf_cnn_benchmarksroot@ubt2204s-uefi-amd-diag:/mnt/git/tf_benchmakrs/scripts/tf_cnn_benchmarks# [7mpython tf_cnn_benchmarks.py --num_gpus=1 --batch_size=64 --model=resnet50  --use_fp16[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython tf_cnn_benchmarks.py --num_gpus=1 --batch_size=64 --model=resnet50  --use_fp16
+[A
+[?2004l2024-07-17 17:18:41.892783: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:From /root/.local/lib/python3.10/site-packages/tensorflow/python/compat/v2_compat.py:108: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2024-07-17 17:18:43.778344: I tensorflow/compiler/xla/stream_executor/rocm/rocm_gpu_executor.cc:756] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 17:18:44.529481: I tensorflow/compiler/xla/stream_executor/rocm/rocm_gpu_executor.cc:756] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 17:18:44.529545: I tensorflow/compiler/xla/stream_executor/rocm/rocm_gpu_executor.cc:756] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 17:18:44.529564: I tensorflow/core/common_runtime/gpu/gpu_device.cc:2266] Ignoring visible gpu device (device: 0, name: AMD Radeon PRO W7800, pci bus id: 0000:0c:00.0) with AMDGPU version : gfx1100. The supported AMDGPU versions are gfx1030gfx1100, gfx900, gfx906, gfx908, gfx90a, gfx940, gfx941, gfx942.
+2024-07-17 17:18:44.537213: I tensorflow/compiler/xla/stream_executor/rocm/rocm_gpu_executor.cc:756] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 17:18:44.537283: I tensorflow/compiler/xla/stream_executor/rocm/rocm_gpu_executor.cc:756] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 17:18:44.537321: I tensorflow/compiler/xla/stream_executor/rocm/rocm_gpu_executor.cc:756] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 17:18:44.537336: I tensorflow/core/common_runtime/gpu/gpu_device.cc:2266] Ignoring visible gpu device (device: 0, name: AMD Radeon PRO W7800, pci bus id: 0000:0c:00.0) with AMDGPU version : gfx1100. The supported AMDGPU versions are gfx1030gfx1100, gfx900, gfx906, gfx908, gfx90a, gfx940, gfx941, gfx942.
+Traceback (most recent call last):
+  File "/mnt/git/tf_benchmakrs/scripts/tf_cnn_benchmarks/tf_cnn_benchmarks.py", line 68, in <module>
+    app.run(main)  # Raises error on invalid flags, unlike tf.app.run()
+  File "/root/.local/lib/python3.10/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/root/.local/lib/python3.10/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+  File "/mnt/git/tf_benchmakrs/scripts/tf_cnn_benchmarks/tf_cnn_benchmarks.py", line 59, in main
+    tfversion = cnn_util.tensorflow_version_tuple()
+  File "/mnt/git/tf_benchmakrs/scripts/tf_cnn_benchmarks/cnn_util.py", line 27, in tensorflow_version_tuple
+    major, minor, patch = v.split('.')
+ValueError: too many values to unpack (expected 3)
+[?2004h]0;root@ubt2204s-uefi-amd-diag: /mnt/git/tf_benchmakrs/scripts/tf_cnn_benchmarksroot@ubt2204s-uefi-amd-diag:/mnt/git/tf_benchmakrs/scripts/tf_cnn_benchmarks# docker ps -a
+[?2004lCONTAINER ID   IMAGE                                                                     COMMAND                   CREATED        STATUS                           PORTS                                   NAMES
+efb303c888d9   rocm/tensorflow                                                           "/bin/bash"               2 hours ago    Exited (129) About an hour ago                                           quizzical_volhard
+9fc7463b3c65   rocm/tensorflow                                                           "/bin/bash"               2 hours ago    Exited (127) 2 hours ago                                                 thirsty_satoshi
+9f3f3e7c67a5   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1_migraphx-mlperf_15   "bash"                    3 weeks ago    Exited (129) 3 weeks ago                                                 affectionate_chaum
+bd733ccf1786   726ab8222adb                                                              "/bin/sh -c 'if [ \"$…"   4 weeks ago    Exited (128) 4 weeks ago                                                 tender_brattain
+7b75ce53bed8   726ab8222adb                                                              "/bin/sh -c 'if [ \"$…"   4 weeks ago    Exited (128) 4 weeks ago                                                 priceless_mcclintock
+4437a9806404   726ab8222adb                                                              "/bin/sh -c 'if [ \"$…"   4 weeks ago    Dead                                                                     laughing_booth
+c29ee8fcb9d4   726ab8222adb                                                              "/bin/sh -c 'if [ \"$…"   4 weeks ago    Exited (128) 4 weeks ago                                                 distracted_mcclintock
+3ad6e8f948e7   726ab8222adb                                                              "/bin/sh -c 'if [ \"$…"   4 weeks ago    Exited (128) 4 weeks ago                                                 romantic_dubinsky
+edb8803d4ed6   519916d02266                                                              "/bin/sh -c 'if [ \"$…"   4 weeks ago    Exited (255) 4 weeks ago                                                 musing_sinoussi
+d2465360c9b5   519916d02266                                                              "/bin/sh -c 'if [ \"$…"   4 weeks ago    Exited (1) 4 weeks ago                                                   beautiful_carver
+9cdc853f49f6   embeddedllminfo/vllm-rocm:vllm-v0.2.6                                     "/bin/bash"               5 weeks ago    Exited (129) 5 weeks ago                                                 bold_murdock
+b2675a78eaca   ghcr.io/huggingface/text-generation-inference:1.4.0                       "text-generation-lau…"    5 weeks ago    Created                          0.0.0.0:8000->80/tcp, :::8000->80/tcp   flamboyant_herschel
+c5cec30836f0   ghcr.io/huggingface/text-generation-inference:1.4.0                       "text-generation-lau…"    5 weeks ago    Created                          0.0.0.0:8000->80/tcp, :::8000->80/tcp   hardcore_ramanujan
+50be30844aff   ghcr.io/huggingface/text-generation-inference:1.4.0                       "text-generation-lau…"    5 weeks ago    Created                          0.0.0.0:8000->80/tcp, :::8000->80/tcp   gallant_hopper
+2d86663e01f3   ghcr.io/huggingface/text-generation-inference:1.4.0                       "text-generation-lau…"    5 weeks ago    Created                          0.0.0.0:8000->80/tcp, :::8000->80/tcp   affectionate_black
+301521d9f21f   ghcr.io/huggingface/text-generation-inference:1.4.0                       "text-generation-lau…"    5 weeks ago    Created                          0.0.0.0:8000->80/tcp, :::8000->80/tcp   crazy_boyd
+b51e263e1d4a   ghcr.io/huggingface/text-generation-inference:1.4.0                       "text-generation-lau…"    5 weeks ago    Created                          0.0.0.0:8000->80/tcp, :::8000->80/tcp   practical_blackwell
+5e7741576815   ghcr.io/huggingface/text-generation-inference:1.4.0                       "text-generation-lau…"    5 weeks ago    Created                          0.0.0.0:8000->80/tcp, :::8000->80/tcp   upbeat_jackson
+1bbff442d858   rocm/pytorch:rocm5.7_ubuntu22.04_py3.10_pytorch_2.0.1                     "/bin/bash"               6 weeks ago    Exited (255) 2 weeks ago                                                 sdxl_
+0b1a797c72bc   rocm/pytorch:rocm5.7_ubuntu22.04_py3.10_pytorch_2.0.1                     "/bin/bash"               6 weeks ago    Exited (137) 6 weeks ago                                                 sdxl
+f1e4bce9dd3d   l1naforever/stable-diffusion-rocm:latest                                  "/bin/bash -c 'pytho…"    6 weeks ago    Exited (1) 6 weeks ago                                                   adoring_johnson
+8946c05e04d1   l1naforever/stable-diffusion-rocm:latest                                  "/bin/bash -c 'pytho…"    6 weeks ago    Exited (1) 6 weeks ago                                                   confident_shockley
+d098958fac1d   l1naforever/stable-diffusion-rocm:latest                                  "/bin/bash -c 'pytho…"    6 weeks ago    Exited (1) 6 weeks ago                                                   vibrant_elbakyan
+5b69787932ff   l1naforever/stable-diffusion-rocm:latest                                  "/bin/bash -c 'pytho…"    6 weeks ago    Exited (1) 6 weeks ago                                                   stable-diffusion3
+3cbf5bce3958   l1naforever/stable-diffusion-rocm:latest                                  "/bin/bash -c 'pytho…"    6 weeks ago    Exited (1) 6 weeks ago                                                   stable-diffusion2
+7e03a8fa89ce   l1naforever/stable-diffusion-rocm:latest                                  "/bin/bash -c 'pytho…"    6 weeks ago    Exited (1) 6 weeks ago                                                   stable-diffusion1
+112f5528fc53   l1naforever/stable-diffusion-rocm:latest                                  "/bin/bash -c 'pytho…"    6 weeks ago    Exited (1) 6 weeks ago                                                   stable-diffusion
+79abdb6a15cc   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1_migraphx-mlperf      "bash"                    6 weeks ago    Exited (129) 6 weeks ago                                                 lucid_easley
+f3ef4c10fd39   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1_migraphx-mlperf_15   "bash"                    6 weeks ago    Exited (255) 2 weeks ago                                                 busy_goldberg
+af23f4771888   ac6c8aa6cf86                                                              "/bin/bash"               6 weeks ago    Exited (137) 6 weeks ago                                                 gallant_gould
+6ee178c4dadd   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1_migraphx-mlperf_15   "bash"                    6 weeks ago    Exited (137) 6 weeks ago                                                 sad_turing
+7b7e33b0cfea   ac6c8aa6cf86                                                              "/bin/bash"               7 weeks ago    Exited (137) 6 weeks ago                                                 awesome_noether
+09afcccf4e0a   embeddedllminfo/vllm-rocm:vllm-v0.2.4                                     "/bin/bash"               7 weeks ago    Exited (137) 5 weeks ago                                                 tender_mirzakhani
+d9b56ee6e317   embeddedllminfo/vllm-rocm:vllm-v0.2.4                                     "/bin/bash"               7 weeks ago    Exited (137) 5 weeks ago                                                 clever_einstein
+5f7f43eeb2aa   rocm/pytorch:rocm5.7_ubuntu22.04_py3.10_pytorch_2.0.1                     "bash"                    7 weeks ago    Exited (137) 7 weeks ago                                                 unruffled_wright
+07bd62a698ad   41f9c4a96c08                                                              "bash"                    2 months ago   Exited (137) 6 weeks ago                                                 modest_cerf
+cea61613958d   2574254694cc                                                              "bash"                    2 months ago   Exited (137) 7 weeks ago                                                 peaceful_borg
+d239d0fe1f95   rocm/pytorch:rocm5.7_ubuntu22.04_py3.10_pytorch_2.0.1                     "bash"                    2 months ago   Exited (137) 7 weeks ago                                                 cranky_kilby
+cb6b37f42920   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1_migraphx-mlperf      "bash"                    2 months ago   Exited (137) 7 weeks ago                                                 fervent_volhard
+b02594133126   2574254694cc                                                              "bash"                    2 months ago   Exited (137) 2 months ago                                                vigilant_wilbur
+c780e2b510d1   2574254694cc                                                              "bash"                    2 months ago   Exited (137) 2 months ago                                                great_napier
+c38c029e2860   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1_migraphx-mlperf      "bash"                    2 months ago   Exited (137) 2 months ago                                                strange_boyd
+60b94ce6d79b   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1_migraphx-mlperf      "bash"                    2 months ago   Created                                                                  gallant_faraday
+ea9fbce4f2fd   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1_migraphx-mlperf      "bash"                    2 months ago   Exited (137) 2 months ago                                                compassionate_kowalevski
+5bba26bc463b   03aaa8a8657c                                                              "bash"                    2 months ago   Exited (137) 2 months ago                                                blissful_khorana
+96d6117a3dee   03aaa8a8657c                                                              "bash"                    2 months ago   Exited (129) 2 months ago                                                affectionate_easley
+4c66f9931e97   45de5408c631                                                              "bash"                    2 months ago   Exited (137) 2 months ago                                                mystifying_morse
+6c3d84f506ca   21dbcfba1b87                                                              "bash"                    2 months ago   Exited (137) 2 months ago                                                elastic_lederberg
+63aae10258ca   rocm/pytorch:rocm6.0_ubuntu22.04_py3.9_pytorch_2.0.1                      "bash"                    2 months ago   Exited (137) 2 months ago                                                mlperf_temp_test_marv
+[?2004h]0;root@ubt2204s-uefi-amd-diag: /mnt/git/tf_benchmakrs/scripts/tf_cnn_benchmarksroot@ubt2204s-uefi-amd-diag:/mnt/git/tf_benchmakrs/scripts/tf_cnn_benchmarks# docker stop +[K[7m9fc7463b3c65[27m9fc7463b3c65
+[?2004l9fc7463b3c65
+[?2004h]0;root@ubt2204s-uefi-amd-diag: /mnt/git/tf_benchmakrs/scripts/tf_cnn_benchmarksroot@ubt2204s-uefi-amd-diag:/mnt/git/tf_benchmakrs/scripts/tf_cnn_benchmarks# docker stop 9fc7463b3c65ps -a[K[K[K[K[K[Kattach [7mefb303c888d9[27mefb303c888d9
+[?2004lYou cannot attach to a stopped container, start it first
+[?2004h]0;root@ubt2204s-uefi-amd-diag: /mnt/git/tf_benchmakrs/scripts/tf_cnn_benchmarksroot@ubt2204s-uefi-amd-diag:/mnt/git/tf_benchmakrs/scripts/tf_cnn_benchmarks# docker s[Krestart [7mefb303c888d9[27mefb303c888d9
+[?2004lefb303c888d9
+[?2004h]0;root@ubt2204s-uefi-amd-diag: /mnt/git/tf_benchmakrs/scripts/tf_cnn_benchmarksroot@ubt2204s-uefi-amd-diag:/mnt/git/tf_benchmakrs/scripts/tf_cnn_benchmarks# docker attach [7mefb303c888d9[27mefb303c888d9
+[?2004l[K[31mtf-docker[m [33m/[m > [K[31mtf-docker[m [33m/[m > cd /home/git/tf_benchmakrs/
+[31mtf-docker[m [33m/home/git/tf_benchmakrs[m > python tf_cnn_benchmarks.py --num_gpus=1 --batch_size=64 --model=resnet50  --use_fp16
+python: can't open file '/home/git/tf_benchmakrs/tf_cnn_benchmarks.py': [Errno 2] No such file or directory
+[31mtf-docker[m [33m/home/git/tf_benchmakrs[m > [Kls
+LICENSE  README.md  [0m[01;34mperfzero[0m  [01;34mscripts[0m
+[31mtf-docker[m [33m/home/git/tf_benchmakrs[m > cd scripts/tf_cnn_benchmarks/
+[31mtf-docker[m [33m/home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks[m > python tf_cnn_benchmarks.py --num_gpus=1 --batch_size=64 --model=resnet50  --use_fp16
+2024-07-17 09:26:47.436163: E external/local_xla/xla/stream_executor/plugin_registry.cc:93] Invalid plugin kind specified: DNN
+2024-07-17 09:26:47.486337: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/usr/lib/python3/dist-packages/requests/__init__.py:89: RequestsDependencyWarning: urllib3 (1.26.18) or chardet (3.0.4) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+/usr/local/lib/python3.9/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.16.5 and <1.23.0 is required for this version of SciPy (detected version 1.26.4
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+WARNING:tensorflow:From /usr/local/lib/python3.9/dist-packages/tensorflow/python/compat/v2_compat.py:108: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2024-07-17 09:26:48.754447: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:26:48.777471: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:26:48.777537: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:26:48.778841: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:26:48.778905: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:26:48.778943: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:26:48.779067: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:26:48.779117: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:26:48.779162: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:26:48.779184: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1929] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 30126 MB memory:  -> device: 0, name: AMD Radeon PRO W7800, pci bus id: 0000:0c:00.0
+TensorFlow:  2.15
+Model:       resnet50
+Dataset:     imagenet (synthetic)
+Mode:        training
+SingleSess:  False
+Batch size:  64 global
+             64 per device
+Num batches: 100
+Num epochs:  0.00
+Devices:     ['/gpu:0']
+NUMA bind:   False
+Data format: NCHW
+Optimizer:   sgd
+Variables:   parameter_server
+==========
+Generating training model
+/usr/local/lib/python3.9/dist-packages/tensorflow/python/keras/legacy_tf_layers/convolutional.py:404: UserWarning: `tf.layers.conv2d` is deprecated and will be removed in a future version. Please Use `tf.keras.layers.Conv2D` instead.
+  warnings.warn('`tf.layers.conv2d` is deprecated and '
+/usr/local/lib/python3.9/dist-packages/tensorflow/python/keras/engine/base_layer_v1.py:1697: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  warnings.warn('`layer.apply` is deprecated and '
+WARNING:tensorflow:From /usr/local/lib/python3.9/dist-packages/keras/src/layers/normalization/batch_normalization.py:883: _colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+W0717 09:26:49.090005 140020452013888 deprecation.py:50] From /usr/local/lib/python3.9/dist-packages/keras/src/layers/normalization/batch_normalization.py:883: _colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+/usr/local/lib/python3.9/dist-packages/tensorflow/python/keras/legacy_tf_layers/pooling.py:296: UserWarning: `tf.layers.max_pooling2d` is deprecated and will be removed in a future version. Please use `tf.keras.layers.MaxPooling2D` instead.
+  warnings.warn('`tf.layers.max_pooling2d` is deprecated and '
+Initializing graph
+WARNING:tensorflow:From /home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks/benchmark_cnn.py:2245: Supervisor.__init__ (from tensorflow.python.training.supervisor) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.MonitoredTrainingSession
+W0717 09:26:50.775305 140020452013888 deprecation.py:50] From /home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks/benchmark_cnn.py:2245: Supervisor.__init__ (from tensorflow.python.training.supervisor) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.MonitoredTrainingSession
+2024-07-17 09:26:51.005738: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:26:51.006086: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:26:51.006156: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:26:51.006222: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:26:51.006264: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:26:51.006284: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1929] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 30126 MB memory:  -> device: 0, name: AMD Radeon PRO W7800, pci bus id: 0000:0c:00.0
+2024-07-17 09:26:51.039481: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2024-07-17 09:26:51.335463: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+INFO:tensorflow:Running local_init_op.
+I0717 09:26:51.631558 140020452013888 session_manager.py:545] Running local_init_op.
+2024-07-17 09:26:51.660831: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+INFO:tensorflow:Done running local_init_op.
+I0717 09:26:51.699347 140020452013888 session_manager.py:548] Done running local_init_op.
+2024-07-17 09:26:51.836138: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+2024-07-17 09:26:51.874816: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+2024-07-17 09:26:51.899089: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+Running warm up
+2024-07-17 09:26:52.507684: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+Done warm up
+Step	Img/sec	total_loss
+1	images/sec: 468.0 +/- 0.0 (jitter = 0.0)	7.603
+10	images/sec: 466.9 +/- 0.2 (jitter = 0.9)	7.855
+20	images/sec: 466.5 +/- 0.2 (jitter = 1.0)	8.006
+30	images/sec: 466.4 +/- 0.2 (jitter = 1.2)	7.941
+40	images/sec: 466.1 +/- 0.2 (jitter = 1.5)	8.137
+50	images/sec: 466.0 +/- 0.2 (jitter = 1.7)	8.058
+60	images/sec: 465.8 +/- 0.2 (jitter = 1.8)	7.791
+70	images/sec: 465.6 +/- 0.2 (jitter = 1.8)	7.865
+80	images/sec: 465.4 +/- 0.2 (jitter = 2.1)	8.008
+90	images/sec: 465.2 +/- 0.2 (jitter = 2.0)	7.848
+100	images/sec: 464.9 +/- 0.2 (jitter = 2.0)	8.091
+----------------------------------------------------------------
+total images/sec: 464.75
+----------------------------------------------------------------
+[31mtf-docker[m [33m/home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks[m > [Kpython tf_cnn_benchmarks.py --num_gpus=1 --batch_size=64 --model=resnet50  --use_fp16[1P[1P[1P[1P[1P[1P[1P[1P[1@v[1@g[1@g[1@1[1@6
+2024-07-17 09:32:13.748523: E external/local_xla/xla/stream_executor/plugin_registry.cc:93] Invalid plugin kind specified: DNN
+2024-07-17 09:32:13.798383: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/usr/lib/python3/dist-packages/requests/__init__.py:89: RequestsDependencyWarning: urllib3 (1.26.18) or chardet (3.0.4) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+/usr/local/lib/python3.9/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.16.5 and <1.23.0 is required for this version of SciPy (detected version 1.26.4
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+WARNING:tensorflow:From /usr/local/lib/python3.9/dist-packages/tensorflow/python/compat/v2_compat.py:108: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2024-07-17 09:32:15.011963: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:32:15.034246: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:32:15.034317: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:32:15.035560: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:32:15.035638: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:32:15.035686: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:32:15.035812: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:32:15.035868: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:32:15.035921: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:32:15.035949: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1929] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 30126 MB memory:  -> device: 0, name: AMD Radeon PRO W7800, pci bus id: 0000:0c:00.0
+TensorFlow:  2.15
+Model:       vgg16
+Dataset:     imagenet (synthetic)
+Mode:        training
+SingleSess:  False
+Batch size:  64 global
+             64 per device
+Num batches: 100
+Num epochs:  0.00
+Devices:     ['/gpu:0']
+NUMA bind:   False
+Data format: NCHW
+Optimizer:   sgd
+Variables:   parameter_server
+==========
+Generating training model
+/usr/local/lib/python3.9/dist-packages/tensorflow/python/keras/legacy_tf_layers/convolutional.py:404: UserWarning: `tf.layers.conv2d` is deprecated and will be removed in a future version. Please Use `tf.keras.layers.Conv2D` instead.
+  warnings.warn('`tf.layers.conv2d` is deprecated and '
+/usr/local/lib/python3.9/dist-packages/tensorflow/python/keras/engine/base_layer_v1.py:1697: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  warnings.warn('`layer.apply` is deprecated and '
+/usr/local/lib/python3.9/dist-packages/tensorflow/python/keras/legacy_tf_layers/pooling.py:296: UserWarning: `tf.layers.max_pooling2d` is deprecated and will be removed in a future version. Please use `tf.keras.layers.MaxPooling2D` instead.
+  warnings.warn('`tf.layers.max_pooling2d` is deprecated and '
+/usr/local/lib/python3.9/dist-packages/tensorflow/python/keras/legacy_tf_layers/core.py:259: UserWarning: `tf.layers.dropout` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dropout` instead.
+  warnings.warn('`tf.layers.dropout` is deprecated and '
+Initializing graph
+WARNING:tensorflow:From /home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks/benchmark_cnn.py:2245: Supervisor.__init__ (from tensorflow.python.training.supervisor) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.MonitoredTrainingSession
+W0717 09:32:15.628884 140015419639616 deprecation.py:50] From /home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks/benchmark_cnn.py:2245: Supervisor.__init__ (from tensorflow.python.training.supervisor) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.MonitoredTrainingSession
+2024-07-17 09:32:15.673788: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:32:15.673915: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:32:15.673960: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:32:15.674037: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:32:15.674094: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:32:15.674120: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1929] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 30126 MB memory:  -> device: 0, name: AMD Radeon PRO W7800, pci bus id: 0000:0c:00.0
+2024-07-17 09:32:15.679042: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2024-07-17 09:32:15.726979: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+INFO:tensorflow:Running local_init_op.
+I0717 09:32:15.990850 140015419639616 session_manager.py:545] Running local_init_op.
+2024-07-17 09:32:15.998884: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+INFO:tensorflow:Done running local_init_op.
+I0717 09:32:16.033635 140015419639616 session_manager.py:548] Done running local_init_op.
+2024-07-17 09:32:16.054284: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+2024-07-17 09:32:16.061030: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+2024-07-17 09:32:16.065308: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+Running warm up
+2024-07-17 09:32:16.183021: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+Done warm up
+Step	Img/sec	total_loss
+1	images/sec: 243.6 +/- 0.0 (jitter = 0.0)	7.285
+10	images/sec: 241.0 +/- 0.9 (jitter = 1.7)	7.282
+20	images/sec: 241.1 +/- 0.6 (jitter = 1.4)	7.260
+30	images/sec: 241.1 +/- 0.5 (jitter = 1.4)	7.292
+40	images/sec: 240.6 +/- 0.4 (jitter = 1.7)	7.284
+50	images/sec: 240.5 +/- 0.4 (jitter = 1.7)	7.278
+60	images/sec: 240.3 +/- 0.4 (jitter = 2.0)	7.255
+70	images/sec: 240.1 +/- 0.4 (jitter = 1.9)	7.282
+80	images/sec: 239.9 +/- 0.3 (jitter = 2.4)	7.269
+90	images/sec: 240.0 +/- 0.3 (jitter = 2.4)	7.284
+100	images/sec: 240.3 +/- 0.3 (jitter = 2.0)	7.262
+----------------------------------------------------------------
+total images/sec: 240.23
+----------------------------------------------------------------
+[31mtf-docker[m [33m/home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks[m > [Kpython tf_cnn_benchmarks.py --num_gpus=1 --batch_size=64 --model=vgg16  --use_fp16[1P[1P[1P[1P[1P[1@a[1@l[1@e[1@x[1@n[1@e[1@t
+2024-07-17 09:36:26.641925: E external/local_xla/xla/stream_executor/plugin_registry.cc:93] Invalid plugin kind specified: DNN
+2024-07-17 09:36:26.691256: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/usr/lib/python3/dist-packages/requests/__init__.py:89: RequestsDependencyWarning: urllib3 (1.26.18) or chardet (3.0.4) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+/usr/local/lib/python3.9/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.16.5 and <1.23.0 is required for this version of SciPy (detected version 1.26.4
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+WARNING:tensorflow:From /usr/local/lib/python3.9/dist-packages/tensorflow/python/compat/v2_compat.py:108: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2024-07-17 09:36:27.906055: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:36:27.928554: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:36:27.928621: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:36:27.929853: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:36:27.929917: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:36:27.929960: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:36:27.930096: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:36:27.930152: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:36:27.930206: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:36:27.930231: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1929] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 30126 MB memory:  -> device: 0, name: AMD Radeon PRO W7800, pci bus id: 0000:0c:00.0
+TensorFlow:  2.15
+Model:       alexnet
+Dataset:     imagenet (synthetic)
+Mode:        training
+SingleSess:  False
+Batch size:  64 global
+             64 per device
+Num batches: 100
+Num epochs:  0.00
+Devices:     ['/gpu:0']
+NUMA bind:   False
+Data format: NCHW
+Optimizer:   sgd
+Variables:   parameter_server
+==========
+Generating training model
+/usr/local/lib/python3.9/dist-packages/tensorflow/python/keras/legacy_tf_layers/convolutional.py:404: UserWarning: `tf.layers.conv2d` is deprecated and will be removed in a future version. Please Use `tf.keras.layers.Conv2D` instead.
+  warnings.warn('`tf.layers.conv2d` is deprecated and '
+/usr/local/lib/python3.9/dist-packages/tensorflow/python/keras/engine/base_layer_v1.py:1697: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  warnings.warn('`layer.apply` is deprecated and '
+/usr/local/lib/python3.9/dist-packages/tensorflow/python/keras/legacy_tf_layers/pooling.py:296: UserWarning: `tf.layers.max_pooling2d` is deprecated and will be removed in a future version. Please use `tf.keras.layers.MaxPooling2D` instead.
+  warnings.warn('`tf.layers.max_pooling2d` is deprecated and '
+/usr/local/lib/python3.9/dist-packages/tensorflow/python/keras/legacy_tf_layers/core.py:259: UserWarning: `tf.layers.dropout` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dropout` instead.
+  warnings.warn('`tf.layers.dropout` is deprecated and '
+Initializing graph
+WARNING:tensorflow:From /home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks/benchmark_cnn.py:2245: Supervisor.__init__ (from tensorflow.python.training.supervisor) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.MonitoredTrainingSession
+W0717 09:36:28.397940 140448443201344 deprecation.py:50] From /home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks/benchmark_cnn.py:2245: Supervisor.__init__ (from tensorflow.python.training.supervisor) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.MonitoredTrainingSession
+2024-07-17 09:36:28.428544: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:36:28.428659: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:36:28.428707: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:36:28.428782: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:36:28.428831: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:36:28.428858: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1929] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 30126 MB memory:  -> device: 0, name: AMD Radeon PRO W7800, pci bus id: 0000:0c:00.0
+2024-07-17 09:36:28.431804: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2024-07-17 09:36:28.459810: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+INFO:tensorflow:Running local_init_op.
+I0717 09:36:28.708262 140448443201344 session_manager.py:545] Running local_init_op.
+2024-07-17 09:36:28.714761: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+INFO:tensorflow:Done running local_init_op.
+I0717 09:36:28.751250 140448443201344 session_manager.py:548] Done running local_init_op.
+2024-07-17 09:36:28.764181: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+2024-07-17 09:36:28.768253: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+2024-07-17 09:36:28.771269: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+Running warm up
+2024-07-17 09:36:28.835813: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+Done warm up
+Step	Img/sec	total_loss
+1	images/sec: 2666.7 +/- 0.0 (jitter = 0.0)	nan
+10	images/sec: 2658.6 +/- 7.0 (jitter = 11.2)	nan
+20	images/sec: 2662.1 +/- 4.3 (jitter = 10.7)	nan
+30	images/sec: 2658.2 +/- 3.6 (jitter = 15.6)	nan
+40	images/sec: 2657.8 +/- 3.0 (jitter = 17.8)	nan
+50	images/sec: 2658.4 +/- 2.6 (jitter = 12.9)	nan
+60	images/sec: 2656.0 +/- 2.6 (jitter = 13.5)	nan
+70	images/sec: 2656.6 +/- 2.4 (jitter = 22.9)	nan
+80	images/sec: 2656.3 +/- 2.2 (jitter = 22.7)	nan
+90	images/sec: 2657.1 +/- 2.0 (jitter = 21.7)	nan
+100	images/sec: 2656.6 +/- 1.9 (jitter = 22.1)	nan
+----------------------------------------------------------------
+total images/sec: 2652.38
+----------------------------------------------------------------
+[31mtf-docker[m [33m/home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks[m > [Kpython tf_cnn_benchmarks.py --num_gpus=1 --batch_size=64 --model=alexnet  --use_fp16t[1P[1P[1P[1P[1P[1P[1P[1@i[1@n[1@c[1@e[1@p[1@t[1@i[1@o[1@n[1@_[1@v[1@3
+2024-07-17 09:37:05.185633: E external/local_xla/xla/stream_executor/plugin_registry.cc:93] Invalid plugin kind specified: DNN
+2024-07-17 09:37:05.236107: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/usr/lib/python3/dist-packages/requests/__init__.py:89: RequestsDependencyWarning: urllib3 (1.26.18) or chardet (3.0.4) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+/usr/local/lib/python3.9/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.16.5 and <1.23.0 is required for this version of SciPy (detected version 1.26.4
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+WARNING:tensorflow:From /usr/local/lib/python3.9/dist-packages/tensorflow/python/compat/v2_compat.py:108: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2024-07-17 09:37:06.454290: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:37:06.476482: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:37:06.476547: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:37:06.477776: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:37:06.477839: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:37:06.477883: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:37:06.478004: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:37:06.478058: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:37:06.478109: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:37:06.478133: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1929] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 30126 MB memory:  -> device: 0, name: AMD Radeon PRO W7800, pci bus id: 0000:0c:00.0
+Traceback (most recent call last):
+  File "/home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks/tf_cnn_benchmarks.py", line 68, in <module>
+    app.run(main)  # Raises error on invalid flags, unlike tf.app.run()
+  File "/usr/local/lib/python3.9/dist-packages/absl/app.py", line 312, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.9/dist-packages/absl/app.py", line 258, in _run_main
+    sys.exit(main(argv))
+  File "/home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks/tf_cnn_benchmarks.py", line 57, in main
+    bench = benchmark_cnn.BenchmarkCNN(params)
+  File "/home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks/benchmark_cnn.py", line 1297, in __init__
+    self.model = model or model_config.get_model_config(
+  File "/home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks/models/model_config.py", line 128, in get_model_config
+    raise ValueError('Invalid model name \'%s\' for dataset \'%s\'' %
+ValueError: Invalid model name 'inception_v3' for dataset 'imagenet'
+[31mtf-docker[m [33m/home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks[m > [Kpython tf_cnn_benchmarks.py --num_gpus=1 --batch_size=64 --model=inception_v3  --use_fp16[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@S[1@q[1@u[1@e[1@e[1@z[1@e[1@N[1@e[1@t
+2024-07-17 09:37:36.731215: E external/local_xla/xla/stream_executor/plugin_registry.cc:93] Invalid plugin kind specified: DNN
+2024-07-17 09:37:36.782149: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/usr/lib/python3/dist-packages/requests/__init__.py:89: RequestsDependencyWarning: urllib3 (1.26.18) or chardet (3.0.4) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+/usr/local/lib/python3.9/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.16.5 and <1.23.0 is required for this version of SciPy (detected version 1.26.4
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+WARNING:tensorflow:From /usr/local/lib/python3.9/dist-packages/tensorflow/python/compat/v2_compat.py:108: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2024-07-17 09:37:38.049375: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:37:38.071898: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:37:38.071967: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:37:38.073216: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:37:38.073281: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:37:38.073325: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:37:38.073458: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:37:38.073508: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:37:38.073565: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:37:38.073589: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1929] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 30126 MB memory:  -> device: 0, name: AMD Radeon PRO W7800, pci bus id: 0000:0c:00.0
+Traceback (most recent call last):
+  File "/home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks/tf_cnn_benchmarks.py", line 68, in <module>
+    app.run(main)  # Raises error on invalid flags, unlike tf.app.run()
+  File "/usr/local/lib/python3.9/dist-packages/absl/app.py", line 312, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.9/dist-packages/absl/app.py", line 258, in _run_main
+    sys.exit(main(argv))
+  File "/home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks/tf_cnn_benchmarks.py", line 57, in main
+    bench = benchmark_cnn.BenchmarkCNN(params)
+  File "/home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks/benchmark_cnn.py", line 1297, in __init__
+    self.model = model or model_config.get_model_config(
+  File "/home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks/models/model_config.py", line 128, in get_model_config
+    raise ValueError('Invalid model name \'%s\' for dataset \'%s\'' %
+ValueError: Invalid model name 'SqueezeNet' for dataset 'imagenet'
+[31mtf-docker[m [33m/home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks[m > [Kvi models/
+__init__.py               alexnet_model.py          experimental/             inception_model.py        model.py                  official_resnet_model.py  resnet_model.py           tf1_only/                 vgg_model.py              
+__pycache__/              densenet_model.py         googlenet_model.py        lenet_model.py            model_config.py           overfeat_model.py         resnet_model_test.py      trivial_model.py          
+[31mtf-docker[m [33m/home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks[m > vi models/model_config.py 
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;58r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[58;1H"models/model_config.py" 177L, 7191C[2;1H�[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m# Copyright 2017 The TensorFlow Authors. All Rights Reserved.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ==============================================================================[m
+
+[31m"""Model configurations for CNN benchmarks.
+"""[m
+
+[35mfrom[m functools [35mimport[m partial
+
+[35mfrom[m models [35mimport[m alexnet_model
+[35mfrom[m models [35mimport[m densenet_model
+[35mfrom[m models [35mimport[m googlenet_model
+[35mfrom[m models [35mimport[m inception_model
+[35mfrom[m models [35mimport[m lenet_model
+[35mfrom[m models [35mimport[m official_resnet_model
+[35mfrom[m models [35mimport[m overfeat_model
+[35mfrom[m models [35mimport[m resnet_model
+[35mfrom[m models [35mimport[m trivial_model
+[35mfrom[m models [35mimport[m vgg_model
+[35mfrom[m models.experimental [35mimport[m deepspeech
+[35mfrom[m models.experimental [35mimport[m official_ncf_model
+
+
+_model_name_to_imagenet_model = {
+    [31m'vgg11'[m: vgg_model.Vgg11Model,
+    [31m'vgg16'[m: vgg_model.Vgg16Model,
+    [31m'vgg19'[m: vgg_model.Vgg19Model,
+    [31m'lenet'[m: lenet_model.Lenet5Model,
+    [31m'googlenet'[m: googlenet_model.GooglenetModel,
+    [31m'overfeat'[m: overfeat_model.OverfeatModel,
+    [31m'alexnet'[m: alexnet_model.AlexnetModel,
+    [31m'trivial'[m: trivial_model.TrivialModel,
+    [31m'inception3'[m: inception_model.Inceptionv3Model,
+    [31m'inception4'[m: inception_model.Inceptionv4Model,
+    [31m'official_resnet18_v2'[m:[47;9Hpartial(official_resnet_model.ImagenetResnetModel, [31m18[m),
+    [31m'official_resnet34_v2'[m:[49;9Hpartial(official_resnet_model.ImagenetResnetModel, [31m34[m),
+    [31m'official_resnet50_v2'[m:[51;9Hpartial(official_resnet_model.ImagenetResnetModel, [31m50[m),
+    [31m'official_resnet101_v2'[m:[53;9Hpartial(official_resnet_model.ImagenetResnetModel, [31m101[m),
+    [31m'official_resnet152_v2'[m:[55;9Hpartial(official_resnet_model.ImagenetResnetModel, [31m152[m),
+    [31m'official_resnet200_v2'[m:[57;9Hpartial(official_resnet_model.ImagenetResnetModel, [31m200[m),[58;247H1,1[11CTop[1;1H[?25h[?25l[58;237Hj[1;1H[58;237H [2;1H[58;247H2[2;1H[?25h[?25l[58;237Hj[2;1H[58;237H [3;1H[58;247H3[3;1H[?25h[?25l[58;237Hj[3;1H[58;237H [4;1H[58;247H4[4;1H[?25h[?25l[58;237Hj[4;1H[58;237H [5;1H[58;247H5[5;1H[?25h[?25l[58;237Hj[5;1H[58;237H [6;1H[58;247H6[6;1H[?25h[?25l[58;237Hj[6;1H[58;237H [7;1H[58;247H7[7;1H[?25h[?25l[58;237Hj[7;1H[58;237H [8;1H[58;247H8[8;1H[?25h[?25l[58;237Hj[8;1H[58;237H [9;1H[58;247H9[9;1H[?25h[?25l[58;237Hj[9;1H[58;237H [10;1H[58;247H10,1[10;1H[?25h[?25l[58;237Hj[10;1H[58;237H [11;1H[58;248H1[11;1H[?25h[?25l[58;237Hj[11;1H[58;237H [12;1H[58;248H2[12;1H[?25h[?25l[58;237Hj[12;1H[58;237H [13;1H[58;248H3[13;1H[?25h[?25l[58;237Hj[13;1H[58;237H [14;1H[58;248H4[14;1H[?25h[?25l[58;237Hj[14;1H[58;237H [15;1H[58;248H5,0-1[15;1H[?25h[?25l[58;237Hj[15;1H[58;237H [16;1H[58;248H6,1  [16;1H[?25h[?25l[58;237Hj[16;1H[58;237H [17;1H[58;248H7[17;1H[?25h[?25l[58;237Hj[17;1H[58;237H [18;1H[58;248H8,0-1[18;1H[?25h[?25l[58;237Hj[18;1H[58;237H [19;1H[58;248H9,1  [19;1H[?25h[?25l[58;237Hj[19;1H[58;237H [20;1H[58;247H20,0-1[20;1H[?25h[?25l[58;237Hj[20;1H[58;237H [21;1H[58;248H1,1  [21;1H[?25h[?25l[58;237Hj[21;1H[58;237H [22;1H[58;248H2[22;1H[?25h[?25l[58;237Hj[22;1H[58;237H [23;1H[58;248H3[23;1H[?25h[?25l[58;237Hj[23;1H[58;237H [24;1H[58;248H4[24;1H[?25h[?25l[58;237Hj[24;1H[58;237H [25;1H[58;248H5[25;1H[?25h[?25l[58;237Hj[25;1H[58;237H [26;1H[58;248H6[26;1H[?25h[?25l[58;237Hj[26;1H[58;237H [27;1H[58;248H7[27;1H[?25h[?25l[58;237Hj[27;1H[58;237H [28;1H[58;248H8[28;1H[?25h[?25l[58;237Hj[28;1H[58;237H [29;1H[58;248H9[29;1H[?25h[?25l[58;237Hj[29;1H[58;237H [30;1H[58;247H30[30;1H[?25h[?25l[58;237Hj[30;1H[58;237H [31;1H[58;248H1[31;1H[?25h[?25l[58;237Hj[31;1H[58;237H [32;1H[58;248H2[32;1H[?25h[?25l[58;237Hj[32;1H[58;237H [33;1H[58;248H3,0-1[33;1H[?25h[?25l[58;237Hj[33;1H[58;237H [34;1H[58;248H4[34;1H[?25h[?25l[58;237Hj[34;1H[58;237H [35;1H[58;248H5,1  [35;1H[?25h[?25l[58;237Hj[35;1H[58;237H [36;1H[58;248H6[36;1H[?25h[?25l[58;237Hj[36;1H[58;237H [37;1H[58;248H7[37;1H[?25h[?25l[58;237Hj[37;1H[58;237H [38;1H[58;248H8[38;1H[?25h[?25l[58;237Hj[38;1H[58;237H [39;1H[58;248H9[39;1H[?25h[?25l[58;237Hj[39;1H[58;237H [40;1H[58;247H40[40;1H[?25h[?25l[58;237Hj[40;1H[58;237H [41;1H[58;248H1[41;1H[?25h[?25l[58;237Hj[41;1H[58;237H [42;1H[58;248H2[42;1H[?25h[?25l[58;237Hj[42;1H[58;237H [43;1H[58;248H3[43;1H[?25h[?25l[58;237Hj[43;1H[58;237H [44;1H[58;248H4[44;1H[?25h[?25l[58;237Hj[44;1H[58;237H [45;1H[58;248H5[45;1H[?25h[?25l[58;237Hj[45;1H[58;237H [46;1H[58;248H6[46;1H[?25h[?25l[58;237Hj[46;1H[58;237H [47;1H[58;248H7[47;1H[?25h[?25l[58;237Hj[47;1H[58;237H [48;1H[58;248H8[48;1H[?25h[?25l[58;237Hj[48;1H[58;237H [49;1H[58;248H9[49;1H[?25h[?25l[58;237Hj[49;1H[58;237H [50;1H[58;247H50[50;1H[?25h[?25l[58;237H:[50;1H[58;1H[K[58;1H:[?2004h[?25hq[?25l[?2004l[23;2t[23;1t[58;1H[K[58;1H[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[31mtf-docker[m [33m/home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks[m > [Kvi models/model_config.py python tf_cnn_benchmarks.py --num_gpus=1 --batch_size=64 --model=SqueezeNet  --use_fp16[2@inception_v3  --use_fp16[1P[1P
+2024-07-17 09:38:14.696094: E external/local_xla/xla/stream_executor/plugin_registry.cc:93] Invalid plugin kind specified: DNN
+2024-07-17 09:38:14.746262: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/usr/lib/python3/dist-packages/requests/__init__.py:89: RequestsDependencyWarning: urllib3 (1.26.18) or chardet (3.0.4) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+/usr/local/lib/python3.9/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.16.5 and <1.23.0 is required for this version of SciPy (detected version 1.26.4
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+WARNING:tensorflow:From /usr/local/lib/python3.9/dist-packages/tensorflow/python/compat/v2_compat.py:108: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2024-07-17 09:38:16.005957: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:38:16.028455: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:38:16.028521: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:38:16.029767: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:38:16.029834: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:38:16.029882: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:38:16.030024: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:38:16.030081: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:38:16.030144: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:38:16.030174: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1929] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 30126 MB memory:  -> device: 0, name: AMD Radeon PRO W7800, pci bus id: 0000:0c:00.0
+TensorFlow:  2.15
+Model:       inception3
+Dataset:     imagenet (synthetic)
+Mode:        training
+SingleSess:  False
+Batch size:  64 global
+             64 per device
+Num batches: 100
+Num epochs:  0.00
+Devices:     ['/gpu:0']
+NUMA bind:   False
+Data format: NCHW
+Optimizer:   sgd
+Variables:   parameter_server
+==========
+Generating training model
+/usr/local/lib/python3.9/dist-packages/tensorflow/python/keras/legacy_tf_layers/convolutional.py:404: UserWarning: `tf.layers.conv2d` is deprecated and will be removed in a future version. Please Use `tf.keras.layers.Conv2D` instead.
+  warnings.warn('`tf.layers.conv2d` is deprecated and '
+/usr/local/lib/python3.9/dist-packages/tensorflow/python/keras/engine/base_layer_v1.py:1697: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  warnings.warn('`layer.apply` is deprecated and '
+WARNING:tensorflow:From /usr/local/lib/python3.9/dist-packages/keras/src/layers/normalization/batch_normalization.py:883: _colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+W0717 09:38:16.336241 139623214753600 deprecation.py:50] From /usr/local/lib/python3.9/dist-packages/keras/src/layers/normalization/batch_normalization.py:883: _colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+/usr/local/lib/python3.9/dist-packages/tensorflow/python/keras/legacy_tf_layers/pooling.py:296: UserWarning: `tf.layers.max_pooling2d` is deprecated and will be removed in a future version. Please use `tf.keras.layers.MaxPooling2D` instead.
+  warnings.warn('`tf.layers.max_pooling2d` is deprecated and '
+/usr/local/lib/python3.9/dist-packages/tensorflow/python/keras/legacy_tf_layers/pooling.py:224: UserWarning: `tf.layers.average_pooling2d` is deprecated and will be removed in a future version. Please use `tf.keras.layers.AveragePooling2D` instead.
+  warnings.warn('`tf.layers.average_pooling2d` is deprecated and '
+Initializing graph
+WARNING:tensorflow:From /home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks/benchmark_cnn.py:2245: Supervisor.__init__ (from tensorflow.python.training.supervisor) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.MonitoredTrainingSession
+W0717 09:38:18.900993 139623214753600 deprecation.py:50] From /home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks/benchmark_cnn.py:2245: Supervisor.__init__ (from tensorflow.python.training.supervisor) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.MonitoredTrainingSession
+2024-07-17 09:38:19.246792: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:38:19.246979: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:38:19.247042: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:38:19.247128: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:38:19.247188: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 09:38:19.247220: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1929] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 30126 MB memory:  -> device: 0, name: AMD Radeon PRO W7800, pci bus id: 0000:0c:00.0
+2024-07-17 09:38:19.300457: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2024-07-17 09:38:19.738009: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+INFO:tensorflow:Running local_init_op.
+I0717 09:38:20.034451 139623214753600 session_manager.py:545] Running local_init_op.
+2024-07-17 09:38:20.082948: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+INFO:tensorflow:Done running local_init_op.
+I0717 09:38:20.112722 139623214753600 session_manager.py:548] Done running local_init_op.
+2024-07-17 09:38:20.308055: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+2024-07-17 09:38:20.366713: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+2024-07-17 09:38:20.406310: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+Running warm up
+2024-07-17 09:38:21.384761: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+Done warm up
+Step	Img/sec	total_loss
+1	images/sec: 293.7 +/- 0.0 (jitter = 0.0)	7.282
+10	images/sec: 293.4 +/- 0.2 (jitter = 0.4)	7.307
+20	images/sec: 293.3 +/- 0.2 (jitter = 0.6)	7.303
+30	images/sec: 293.1 +/- 0.1 (jitter = 0.6)	7.285
+40	images/sec: 292.9 +/- 0.1 (jitter = 0.8)	7.383
+50	images/sec: 292.7 +/- 0.1 (jitter = 1.0)	7.293
+60	images/sec: 292.4 +/- 0.1 (jitter = 1.3)	7.342
+70	images/sec: 292.2 +/- 0.1 (jitter = 1.4)	7.271
+80	images/sec: 292.1 +/- 0.1 (jitter = 1.3)	7.316
+90	images/sec: 292.1 +/- 0.1 (jitter = 1.2)	7.277
+100	images/sec: 292.0 +/- 0.1 (jitter = 1.1)	7.303
+----------------------------------------------------------------
+total images/sec: 291.97
+----------------------------------------------------------------
+[31mtf-docker[m [33m/home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks[m > [Kpython tf_cnn_benchmarks.py --num_gpus=1 --batch_size=64 --model=inception3  --use_fp16[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[9@GoogLeNet
+2024-07-17 10:53:40.561192: E external/local_xla/xla/stream_executor/plugin_registry.cc:93] Invalid plugin kind specified: DNN
+2024-07-17 10:53:40.610881: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/usr/lib/python3/dist-packages/requests/__init__.py:89: RequestsDependencyWarning: urllib3 (1.26.18) or chardet (3.0.4) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+/usr/local/lib/python3.9/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.16.5 and <1.23.0 is required for this version of SciPy (detected version 1.26.4
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+WARNING:tensorflow:From /usr/local/lib/python3.9/dist-packages/tensorflow/python/compat/v2_compat.py:108: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2024-07-17 10:53:41.849846: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 10:53:41.872360: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 10:53:41.872426: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 10:53:41.873702: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 10:53:41.873770: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 10:53:41.873816: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 10:53:41.873956: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 10:53:41.874020: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 10:53:41.874076: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 10:53:41.874101: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1929] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 30126 MB memory:  -> device: 0, name: AMD Radeon PRO W7800, pci bus id: 0000:0c:00.0
+Traceback (most recent call last):
+  File "/home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks/tf_cnn_benchmarks.py", line 68, in <module>
+    app.run(main)  # Raises error on invalid flags, unlike tf.app.run()
+  File "/usr/local/lib/python3.9/dist-packages/absl/app.py", line 312, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.9/dist-packages/absl/app.py", line 258, in _run_main
+    sys.exit(main(argv))
+  File "/home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks/tf_cnn_benchmarks.py", line 57, in main
+    bench = benchmark_cnn.BenchmarkCNN(params)
+  File "/home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks/benchmark_cnn.py", line 1297, in __init__
+    self.model = model or model_config.get_model_config(
+  File "/home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks/models/model_config.py", line 128, in get_model_config
+    raise ValueError('Invalid model name \'%s\' for dataset \'%s\'' %
+ValueError: Invalid model name 'GoogLeNet' for dataset 'imagenet'
+[31mtf-docker[m [33m/home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks[m > [Kpython tf_cnn_benchmarks.py --num_gpus=1 --batch_size=64 --model=GoogLeNet  --use_fp16[1@inception3  --use_fp16[31mtf-docker[m [33m/home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks[m > vi models/model_config.py [K
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;58r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[58;1H"models/model_config.py" 177L, 7191C[2;1H�[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m# Copyright 2017 The TensorFlow Authors. All Rights Reserved.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ==============================================================================[m
+
+[31m"""Model configurations for CNN benchmarks.
+"""[m
+
+[35mfrom[m functools [35mimport[m partial
+
+[35mfrom[m models [35mimport[m alexnet_model
+[35mfrom[m models [35mimport[m densenet_model
+[35mfrom[m models [35mimport[m googlenet_model
+[35mfrom[m models [35mimport[m inception_model
+[35mfrom[m models [35mimport[m lenet_model
+[35mfrom[m models [35mimport[m official_resnet_model
+[35mfrom[m models [35mimport[m overfeat_model
+[35mfrom[m models [35mimport[m resnet_model
+[35mfrom[m models [35mimport[m trivial_model
+[35mfrom[m models [35mimport[m vgg_model
+[35mfrom[m models.experimental [35mimport[m deepspeech
+[35mfrom[m models.experimental [35mimport[m official_ncf_model
+
+
+_model_name_to_imagenet_model = {
+    [31m'vgg11'[m: vgg_model.Vgg11Model,
+    [31m'vgg16'[m: vgg_model.Vgg16Model,
+    [31m'vgg19'[m: vgg_model.Vgg19Model,
+    [31m'lenet'[m: lenet_model.Lenet5Model,
+    [31m'googlenet'[m: googlenet_model.GooglenetModel,
+    [31m'overfeat'[m: overfeat_model.OverfeatModel,
+    [31m'alexnet'[m: alexnet_model.AlexnetModel,
+    [31m'trivial'[m: trivial_model.TrivialModel,
+    [31m'inception3'[m: inception_model.Inceptionv3Model,
+    [31m'inception4'[m: inception_model.Inceptionv4Model,
+    [31m'official_resnet18_v2'[m:[47;9Hpartial(official_resnet_model.ImagenetResnetModel, [31m18[m),
+    [31m'official_resnet34_v2'[m:[49;9Hpartial(official_resnet_model.ImagenetResnetModel, [31m34[m),
+    [31m'official_resnet50_v2'[m:[51;9Hpartial(official_resnet_model.ImagenetResnetModel, [31m50[m),
+    [31m'official_resnet101_v2'[m:[53;9Hpartial(official_resnet_model.ImagenetResnetModel, [31m101[m),
+    [31m'official_resnet152_v2'[m:[55;9Hpartial(official_resnet_model.ImagenetResnetModel, [31m152[m),
+    [31m'official_resnet200_v2'[m:[57;9Hpartial(official_resnet_model.ImagenetResnetModel, [31m200[m),[58;247H50,1[10CTop[50;1H[?25h[?25l[58;237H:[50;1H[58;1H[K[58;1H:[?2004h[?25h/google[?25l[31msearch hit BOTTOM, continuing at TOP[23;1H[m[58;247H23,1[10CTop[58;247H[K[58;247H23,1[10CTop[23;1H[?25h[?25l[58;237Hn[23;1H[58;1H/google [58;9H[K[58;1H[23;20H[58;247H23,20[9CTop[23;20H[?25h[?25l[58;237Hn[23;20H[58;237H[K[58;1H[40;6H[58;247H40,6[10CTop[40;6H[?25h[?25l[58;237Hn[40;6H[58;237H[K[58;1H[40;18H[58;247H40,18[9CTop[40;18H[?25h[?25l[58;237H:[40;18H[58;1H[K[58;1H:[?2004h[?25hq[?25l[?2004l[23;2t[23;1t[58;1H[K[58;1H[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[31mtf-docker[m [33m/home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks[m > [Kvi models/model_config.py python tf_cnn_benchmarks.py --num_gpus=1 --batch_size=64 --model=GoogLeNet  --use_fp16[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@g[1@o[1@o[1@g[1@l[1@e[1@n[1@e[1@t
+2024-07-17 10:54:05.706858: E external/local_xla/xla/stream_executor/plugin_registry.cc:93] Invalid plugin kind specified: DNN
+2024-07-17 10:54:05.756910: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/usr/lib/python3/dist-packages/requests/__init__.py:89: RequestsDependencyWarning: urllib3 (1.26.18) or chardet (3.0.4) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+/usr/local/lib/python3.9/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.16.5 and <1.23.0 is required for this version of SciPy (detected version 1.26.4
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+WARNING:tensorflow:From /usr/local/lib/python3.9/dist-packages/tensorflow/python/compat/v2_compat.py:108: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2024-07-17 10:54:07.007828: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 10:54:07.030604: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 10:54:07.030671: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 10:54:07.031939: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 10:54:07.032002: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 10:54:07.032051: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 10:54:07.032180: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 10:54:07.032232: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 10:54:07.032292: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 10:54:07.032316: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1929] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 30126 MB memory:  -> device: 0, name: AMD Radeon PRO W7800, pci bus id: 0000:0c:00.0
+TensorFlow:  2.15
+Model:       googlenet
+Dataset:     imagenet (synthetic)
+Mode:        training
+SingleSess:  False
+Batch size:  64 global
+             64 per device
+Num batches: 100
+Num epochs:  0.00
+Devices:     ['/gpu:0']
+NUMA bind:   False
+Data format: NCHW
+Optimizer:   sgd
+Variables:   parameter_server
+==========
+Generating training model
+/usr/local/lib/python3.9/dist-packages/tensorflow/python/keras/legacy_tf_layers/convolutional.py:404: UserWarning: `tf.layers.conv2d` is deprecated and will be removed in a future version. Please Use `tf.keras.layers.Conv2D` instead.
+  warnings.warn('`tf.layers.conv2d` is deprecated and '
+/usr/local/lib/python3.9/dist-packages/tensorflow/python/keras/engine/base_layer_v1.py:1697: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  warnings.warn('`layer.apply` is deprecated and '
+/usr/local/lib/python3.9/dist-packages/tensorflow/python/keras/legacy_tf_layers/pooling.py:296: UserWarning: `tf.layers.max_pooling2d` is deprecated and will be removed in a future version. Please use `tf.keras.layers.MaxPooling2D` instead.
+  warnings.warn('`tf.layers.max_pooling2d` is deprecated and '
+/usr/local/lib/python3.9/dist-packages/tensorflow/python/keras/legacy_tf_layers/pooling.py:224: UserWarning: `tf.layers.average_pooling2d` is deprecated and will be removed in a future version. Please use `tf.keras.layers.AveragePooling2D` instead.
+  warnings.warn('`tf.layers.average_pooling2d` is deprecated and '
+Initializing graph
+WARNING:tensorflow:From /home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks/benchmark_cnn.py:2245: Supervisor.__init__ (from tensorflow.python.training.supervisor) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.MonitoredTrainingSession
+W0717 10:54:08.501016 140656520939328 deprecation.py:50] From /home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks/benchmark_cnn.py:2245: Supervisor.__init__ (from tensorflow.python.training.supervisor) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.MonitoredTrainingSession
+2024-07-17 10:54:08.643978: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 10:54:08.644096: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 10:54:08.644140: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 10:54:08.644208: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 10:54:08.644258: I external/local_xla/xla/stream_executor/rocm/rocm_gpu_executor.cc:787] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2024-07-17 10:54:08.644283: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1929] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 30126 MB memory:  -> device: 0, name: AMD Radeon PRO W7800, pci bus id: 0000:0c:00.0
+2024-07-17 10:54:08.664686: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+2024-07-17 10:54:08.847408: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+INFO:tensorflow:Running local_init_op.
+I0717 10:54:09.117450 140656520939328 session_manager.py:545] Running local_init_op.
+2024-07-17 10:54:09.135724: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+INFO:tensorflow:Done running local_init_op.
+I0717 10:54:09.169226 140656520939328 session_manager.py:548] Done running local_init_op.
+2024-07-17 10:54:09.234150: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+2024-07-17 10:54:09.253984: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+2024-07-17 10:54:09.267776: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+Running warm up
+2024-07-17 10:54:09.724039: I tensorflow/core/common_runtime/gpu_fusion_pass.cc:508] ROCm Fusion is enabled.
+Done warm up
+Step	Img/sec	total_loss
+1	images/sec: 1021.6 +/- 0.0 (jitter = 0.0)	7.068
+10	images/sec: 1023.5 +/- 2.4 (jitter = 6.9)	7.072
+20	images/sec: 1025.1 +/- 1.5 (jitter = 6.5)	7.069
+30	images/sec: 1026.3 +/- 1.2 (jitter = 5.9)	7.068
+40	images/sec: 1026.9 +/- 0.9 (jitter = 5.3)	7.086
+50	images/sec: 1025.7 +/- 0.9 (jitter = 6.2)	7.053
+60	images/sec: 1025.6 +/- 0.8 (jitter = 6.0)	7.098
+70	images/sec: 1024.7 +/- 0.8 (jitter = 7.6)	7.059
+80	images/sec: 1025.0 +/- 0.8 (jitter = 8.2)	7.082
+90	images/sec: 1024.3 +/- 0.7 (jitter = 8.3)	7.078
+100	images/sec: 1023.6 +/- 0.7 (jitter = 8.8)	7.060
+----------------------------------------------------------------
+total images/sec: 1022.73
+----------------------------------------------------------------
+[31mtf-docker[m [33m/home/git/tf_benchmakrs/scripts/tf_cnn_benchmarks[m > [K
